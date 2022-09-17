@@ -31,7 +31,7 @@ const Feed = () => {
             {/* Videos Header */}
             <Box p={2} sx={{ overflow: 'auto', height: '90vh', flex: 2 }}>
                 <Typography variant="h4" fontWeight="bold" mb={2} sx={{ color: '#fff' }}>
-                    {selectedCategory} <span style={{ color: '#f31503' }}>Videos</span>
+                    {selectedCategory} <span style={{ color: '#5C7AFF' }}>Videos</span>
                 </Typography>
 
                 {/* Rendering Videos */}

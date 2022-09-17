@@ -19,13 +19,13 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
                     setSelectedCategory(category.name);
                 }}
                 style={{ 
-                    background: category.name === selectedCategory && '#fc1503',
+                    background: category.name === selectedCategory && '#5C7AFF',
                     color: '#fff'
                  }}
                  key={ category.name }
             >
                 <span style={{ 
-                    color: category.name === selectedCategory ? '#fff': 'red', marginRight: '15px' 
+                    color: category.name === selectedCategory ? '#fff': '#5C7AFF', marginRight: '15px' 
                 }}>
                     {category.icon}
                 </span>
