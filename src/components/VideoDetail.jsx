@@ -10,7 +10,7 @@ import { fetchFromAPI } from "../utils/fetchFromAPI";
 const VideoDetail = () =>{
 
     const [videoDetail, setVideoDetail] = useState(null);
-    const [videos, setVideos] = useState(null); 
+    const [videos, setVideos] = useState([]); 
 
     const { id } = useParams();
     
@@ -20,7 +20,7 @@ const VideoDetail = () =>{
 
         fetchFromAPI(`search?part=sinppet&relatedToVideoId=${id}&type=video`)
         .then((data) => setVideos(data.items));
-    }, [id])
+    }, [id]);
 
     if(!videoDetail?.snippet) return 'Loading...';
     const { snippet: { title, channelId, channelTitle }, statistics: { viewCount, likeCount }}= videoDetail;
